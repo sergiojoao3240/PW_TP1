@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecrã de Agendamentos</title>
+
+    <!-- Links -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cal.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top" >
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">Agendamento</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right icons">
+                <li><a href="#"><i class="bi bi-house-door"></i></a></li>
+                <li class="bell">
+                    <a href="#"><i class="bi bi-bell"></i></a>
+                    <ul class="message">
+                        <li>
+                            <div class="bloco">
+                               <i class="bi bi-person-heart"></i>
+                               <span>Pessoa x gostou da sua foto</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bloco">
+                                <i class="bi bi-trophy"></i>
+                               <span>O seu desafio foi concluido</span>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="bloco">
+                                <i class="bi bi-clipboard2-pulse"></i>
+                               <span>Avaliação agendada com sucesso</span>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="bloco">
+                               <i class="bi bi-person-heart"></i>
+                               <span>Pessoa y gostou da sua foto</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                </li>
+                <li><a href="#"><i class="bi bi-person"></i></a></li>
+                <li><a href="#"><i class="bi bi-gear"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-50">
+       <h1>Ano 2022</h1>
+
+        <div class="box">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <button class="btn desafio">Agendar Desafio</button>
+            </div>
+
+            <!-- Modal Agendar desafio-->
+            <div id="Mdesafio" class="modal">
+                <div class="modal-content">
+                    <div class="heading">
+                        <span class="close">&times</span>
+                        <p>Selecione a data do desafio</p>
+                    </div>
+                    <div class="content1">
+                        <input type="date" id="z">
+                        <button class="btn guardar" onclick="addEvento(document.getElementById('z').value, 'Desafio')">Guardar</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <button class="btn aval">Agendar Avaliação</button>
+            </div>
+
+            <!-- Modal Agendar avaliacao-->
+            <div id="Maval" class="modal">
+                <div class="modal-content">
+                    <div class="heading">
+                        <span class="close1">&times</span>
+                        <p>Selecione a data da avaliação</p>
+                    </div>
+                    <div class="content1">
+                        <input type="date" id="x" >
+                        <button class="btn guardar" onclick="addEvento(document.getElementById('x').value, 'Avaliação')">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 calendar">
+                <div class="panel-body_" id="caleandar"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="direitos">
+        <p>© 2022 ResCode All rights reserved</p>
+    </footer>
+    </div>
+<script src="script.js"></script>
+
+    <script type="text/javascript" src="caleandar.js"></script>
+    <script type="text/javascript" src="demo.js"></script>
+</body>
+</html>

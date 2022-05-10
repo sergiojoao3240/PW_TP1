@@ -1,0 +1,265 @@
+/* HEADER */
+.navbar {
+    background-color: rgba(44, 44, 44, 1);
+    height: 50px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-nav{
+    margin: 0px -15px;
+}
+
+ul{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+ul.icons{
+    float: right;
+}
+
+ul.icons li a i{
+    text-decoration: none;
+    text-align: center;
+    color: #FFF;
+    font-size: 28px;
+    padding: 0px;
+    margin:5;
+}
+
+ul.icons li{
+    position: relative;
+    padding: 0px;
+}
+
+ul.icons li:last-of-type{
+    margin-right: 20px;
+}
+
+ul.message{
+    position: absolute;
+    top: 50px;
+    left:  -125px;
+    background-color: rgba(44, 44, 44, 1);
+    padding: 10px;
+    display: none;
+    width:  250px;
+}
+
+ul.message li .bloco{
+    height:  60px;
+    position:  relative;
+    width: 100%;
+    padding:  0px;
+    border-bottom:  1px dotted #d1d1d1 !important;
+}
+ul.message li{
+    list-style-type: none;
+    color:  #fff;
+}
+
+
+  ul.message li .bloco i{
+    float:  left;
+    width:  50px;
+    font-size: 30px;
+  }
+
+ul.message li span{
+    padding:  5px;
+    color:  #fff;
+    font-size:  14px;
+    font-weight: 500;
+}
+
+
+ul.icons li a:hover, ul.icons li a:focus{
+    background-color: transparent !important;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 5px;
+}
+
+.mt-50{
+    margin-top: 90px;
+}
+
+.navbar-brand{
+    color: #FFFFFF;
+    font-family: 'Rubik';
+    letter-spacing: 13px;
+    font-size: 27px;
+    font-weight: bold;
+    padding-left: 35px;
+    position: fixed;
+}
+
+@media(max-width: 675px) {
+    .navbar-brand {
+        font-size: 20px;
+        padding-left: 10px;
+        letter-spacing: 8px;
+    }
+}
+
+.navbar-header :hover{
+    color: #FFFFFF;
+    cursor: default;
+}
+
+.nav li{
+    font-size: 14px;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family:'Rubik';
+    padding-left: 10px;
+    color:black;
+    font-weight: bold;
+}
+
+/* -----------HEADER--------------- */
+
+
+/* CONTEUDO */
+.container{
+    width: 90%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input[type=search]{
+    background-color:white;
+    border-color:black;
+    background-image: url('search.svg');
+    background-repeat:no-repeat;
+    background-position: 12pt;
+    padding-left: 5%;
+    border-radius: 25px;
+    width: 60%;
+    text-align: center;
+    font-size: 16px;
+    font-style: 'Rubik';
+}
+
+/* CAIXAS DE ALUNOS */
+/* ---------CAIXAS DE ALUNOS---------- */
+
+.box{
+    margin-top: 60px;
+    border-radius: 25px ;
+    box-shadow: 0px 3px 4px 0px rgba(102, 99, 102, 0.59);
+    width: 100%;
+    height: 530px;
+    overflow: scroll;
+}
+.box::-webkit-scrollbar {
+    width: 10px;
+}
+
+.box::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 25px;
+}
+
+.list{
+    padding: 15px;
+}
+
+.card-interior{
+    position: relative;
+    border-radius: 15px;
+    background-color:rgba(255, 255, 255, 0.905);
+    box-shadow: 0px 3px 4px 0px rgba(102, 99, 102, 0.59);
+    border: 1px solid #ccc;
+    float: left;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.foto img{
+    width: 80px;
+	height:auto;
+    max-height: 80px;
+    margin-left: 10px;
+    margin-top: 9px;
+    border: 3px solid black;
+    border-radius: 90px;
+    padding: 2px;
+}
+
+.foto img, .textos{
+    float:left;
+}
+
+.textos{
+    text-align: left;
+    padding-left: 20px;
+    font-family:'Rubik';
+}
+
+/* .textos */
+    .textos .nome{
+        font-weight: 900;
+        font-size: 14px;
+        padding-top: 8px;
+        color:black;
+    }
+
+    .textos .data{
+        font-size: 12px;
+        color: gray;
+        margin-bottom: 0%;
+    }
+
+    .textos .tag{
+        font-size: 12px;
+        color: gray;
+        padding-top: 0%;
+    }
+
+/*-----.textos------*/
+.buttons{
+    margin-top: 95px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+}
+.btn{
+    font-size: 12px;
+    color: #FFFFFF;
+    background-color: crimson;
+    border-radius: 25px;
+    font-weight: bold;
+    height: 25px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.btn:hover{
+    color:gold;
+}
+
+/* -----------CONTEUDO-------------- */
+
+
+
+
+/*Direitos de autor*/
+.direitos{
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+}

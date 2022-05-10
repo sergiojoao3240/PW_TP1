@@ -1,0 +1,361 @@
+/* HEADER */
+.navbar {
+    background-color: rgba(44, 44, 44, 1);
+    height: 50px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-nav{
+    margin: 0px -15px;
+}
+
+/*ul{
+    display:flex;
+    flex-wrap: wrap;
+}*/
+
+ul.icons{
+    float: right;
+}
+
+ul.icons li a i{
+    text-decoration: none;
+    text-align: center;
+    color: #FFF;
+    font-size: 28px;
+    padding: 0px;
+    margin:5;
+}
+
+ul.icons li{
+    position: relative;
+    padding: 0px;
+}
+
+ul.icons li:last-of-type{
+    margin-right: 20px;
+}
+
+
+ul.message{
+    position: absolute;
+    top: 50px;
+    left:  -125px;
+    background-color: rgba(44, 44, 44, 1);
+    padding: 10px;
+    display: none;
+    width:  250px;
+}
+
+ul.message li .bloco{
+    height:  60px;
+    position:  relative;
+    width: 100%;
+    padding:  0px;
+    border-bottom:  1px dotted #d1d1d1 !important;
+}
+ul.message li{
+    list-style-type: none;
+    color:  #fff;
+}
+
+
+  ul.message li .bloco i{
+    float:  left;
+    width:  50px;
+    font-size: 30px;
+  }
+
+ul.message li span{
+    padding:  5px;
+    color:  #fff;
+    font-size:  14px;
+    font-weight: 500;
+}
+
+
+ul.icons li a:hover, ul.icons li a:focus{
+    background-color: transparent !important;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 5px;
+}
+
+.mt-50{
+    margin-top: 90px;
+}
+
+.navbar-brand{
+    color: #FFFFFF;
+    font-family: 'Rubik';
+    letter-spacing: 13px;
+    font-size: 27px;
+    font-weight: bold;
+    padding-left: 35px;
+    position: fixed;
+}
+
+@media(max-width: 675px) {
+    .navbar-brand {
+        font-size: 20px;
+        padding-left: 10px;
+        letter-spacing: 8px;
+    }
+   /* .day{
+        font-size: 14px;
+    }*/
+}
+@media(max-width: 550px) {
+    .day{
+        font-size: 12px;
+    }
+}
+
+
+.navbar-header :hover{
+    color: #FFFFFF;
+    cursor: default;
+}
+
+.nav li{
+    font-size: 14px;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-family:'Rubik';
+    padding-left: 10px;
+    color:black;
+    font-weight: bold;
+}
+
+
+/*---------HEADER----------*/
+
+
+/* CONTEUDO */
+
+h1{
+    font-style: 'Rubik';
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*buttons*/
+.box{
+    width: 100%;
+    margin-top: 15px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn{
+    margin-left: 15%;
+    margin-top: 10px;
+    width: 300px;
+    height: 40px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: 'Rubik';
+    background-color: crimson;
+    border-radius: 25px;
+    border-color: transparent;
+}
+
+.btn:hover{
+    color:gold;
+}
+/*---buttons---*/
+
+/* calendario*/
+.container-cal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.calendar{
+    margin-top: 50px;
+    border-radius: 25px ;
+    box-shadow: 0px 3px 4px 0px rgba(102, 99, 102, 0.59);
+    padding: 0%;
+}
+
+ .calendar-header {
+    background-color: rgba(44, 44, 44, 1);
+    height: 60px;
+    color: #fff;
+    font-style: 'Rubik';
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    border-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+ }
+
+ .prev-button {
+    position: absolute;
+    cursor: pointer;
+    left: 0%;
+    top: 5px;
+    color: grey !important;
+ }
+
+ .prev-button:hover{
+     color: white !important;
+ }
+
+ .prev-button i {
+    font-size: 4em;
+ }
+
+ .next-button {
+    position: absolute;
+    cursor: pointer;
+    right: 0%;
+    top: 5px;
+    color: grey !important;
+ }
+
+ .next-button:hover{
+    color: white !important;
+}
+
+ .next-button i {
+    font-size: 4em;
+ }
+
+
+h3{
+    padding-top: 2px;
+    font-style: 'Rubik';
+
+
+}
+
+.table{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.table.week{
+   display: table-row;
+}
+
+.row{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0;
+}
+
+
+.table .row.head .day{
+    margin-top: auto;
+    width: 92px;
+    padding: 5px;
+    text-align: center !important;
+    display: table-cell;
+    border: 1px solid gainsboro;
+    font-style: 'Rubik';
+    background-color:rgb(230, 230, 230);
+    color: crimson;
+    font-weight: bold;
+}
+
+.table .row .week .day{
+    width: 92px;
+    height: 55px;
+    padding: 5px;
+    text-align:left;
+    display: table-cell;
+    border: 1px solid gainsboro;
+    font-style: 'Rubik';
+}
+
+/*------CONTEUDO------- */
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 300px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0px;
+    border-radius: 25px;
+    width: 40%;
+    height: 100px;
+    font-style: 'Rubik';
+    color:black;
+    font-size: 16px;
+    text-align: center;
+  }
+
+.heading{
+    margin:0;
+    height: 30px;
+    background-color: rgba(44, 44, 44, 1);
+    border-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color:#FFFFFF;
+}
+
+.content1{
+    margin-top: 10px;
+}
+
+  .btn.guardar{
+    width: 150px;
+    height: 25px;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+    .close, .close1 {
+    color: white !important;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+
+  .close:hover,
+  .close:focus,
+  .close1:hover,
+  .close1:focus {
+    color: white !important;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/*Direitos de autor*/
+.direitos{
+    text-align: center;
+    margin-top: 51px;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+}

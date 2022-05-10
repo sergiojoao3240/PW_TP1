@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecrã Gestão de Desafios</title>
+      <!-- Links -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top" >
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">Gestão de desafios</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right icons">
+                <li><a href="#"><i class="bi bi-house-door"></i></a></li>
+                <li class="bell">
+                    <a href="#"><i class="bi bi-bell"></i></a>
+                    <ul class="message">
+                        <li>
+                            <div class="bloco">
+                               <i class="bi bi-person-heart"></i>
+                               <span>Pessoa x gostou da sua foto</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="bloco">
+                                <i class="bi bi-trophy"></i>
+                               <span>O seu desafio foi concluido</span>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="bloco">
+                                <i class="bi bi-clipboard2-pulse"></i>
+                               <span>Avaliação agendada com sucesso</span>
+                            </div>
+                        </li>
+                         <li>
+                            <div class="bloco">
+                               <i class="bi bi-person-heart"></i>
+                               <span>Pessoa y gostou da sua foto</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                </li>
+                <li><a href="#"><i class="bi bi-person"></i></a></li>
+                <li><a href="#"><i class="bi bi-gear"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-50">
+        <div class="row">
+            <div class="row col-md-8 col-sm-8 col-xs-12">
+                <input type="search" placeholder="Procurar por tipo" class="form-control" id="pesqTipo">
+            </div>
+            <div class="row col-md-4 col-sm-4 col-xs-12">
+                <button class="btn">Adicionar desafio</button>
+            </div>
+        </div>
+
+        <!--Modal para adicionar novo desafio-->
+        <div id="Mdesafio" class="modal">
+            <div class="modal-content">
+                <div class="heading">
+                    <span class="close">&times</span>
+                    <p class="texth">Adicionar desafio</p>
+                </div>
+                <div class="content1">
+                    <input type="text" placeholder="Nome do desafio" id="name">
+                    <input type="text" placeholder="Tipo" id="type">
+                    <input type="text" placeholder="Objetivo" id="objetive">
+                    <input type="text" placeholder="Nome do treinador" id="nameT">
+                    <input type="text" placeholder="Tempo restante" id="timer">
+
+                    <button class="btn guardar">Guardar</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box">
+
+                <div class="col-md-3 col-sm-3 col-xs-4 tipoP" data-tipo="Musculação">
+                    <div class="card-interior">
+                        <i class="bi1 bi-x-circle delete"></i>
+                        <div class="foto">
+                            <img src="dumbell.png" class="img-responsive">
+                            <div class="textos">
+                                <li class="dados">Nome do desafio</li>
+                                <p class="tipo">Musculação</p>
+                                <p class="obj">Objetivo</p>
+                                <p class="pt"><b>Treinador:</b> Nome do treinador</p>
+                                <p class="time">2 horas restantes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-4 tipoP" data-tipo="Pilates">
+                    <div class="card-interior">
+                        <i class="bi1 bi-x-circle delete"></i>
+                        <div class="foto">
+                            <img src="dumbell.png" class="img-responsive">
+                            <div class="textos">
+                                <li class="dados">Nome do desafio</li>
+                                <p class="tipo">Pilates</p>
+                                <p class="obj">Objetivo</p>
+                                <p class="pt"><b>Treinador:</b> Nome do treinador</p>
+                                <p class="time">2 horas restantes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-4 tipoP" data-tipo="Musculação">
+                    <div class="card-interior">
+                        <i class="bi1 bi-x-circle delete"></i>
+                        <div class="foto">
+                            <img src="dumbell.png" class="img-responsive">
+                            <div class="textos">
+                                <li class="dados">Nome do desafio</li>
+                                <p class="tipo">Musculação</p>
+                                <p class="obj">Objetivo</p>
+                                <p class="pt"><b>Treinador:</b> Nome do treinador</p>
+                                <p class="time">2 horas restantes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-4 tipoP" data-tipo="Pernas">
+                    <div class="card-interior">
+                        <i class="bi1 bi-x-circle delete"></i>
+                        <div class="foto">
+                            <img src="dumbell.png" class="img-responsive">
+                            <div class="textos">
+                                <li class="dados">Nome do desafio</li>
+                                <p class="tipo">Pernas</p>
+                                <p class="obj">Objetivo</p>
+                                <p class="pt"><b>Treinador:</b> Nome do treinador</p>
+                                <p class="time">2 horas restantes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="des">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="direitos">
+        <p>© 2022 ResCode All rights reserved</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
